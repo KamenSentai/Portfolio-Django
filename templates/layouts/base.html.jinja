@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="msapplication-TileColor" content="#eeeeee">
     <meta name="theme-color" content="#111111">
-    <title>{% block title %}Portfolio{% endblock %}</title>
+    <title>{% block title %}Alain Cao Van Truong{% endblock %}</title>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon/favicon-32x32.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon/favicon-16x16.png' %}">
@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="{% static 'styles/app.css' %}">
   </head>
   <body>
+    {% include 'layouts/navbar.html.jinja' %}
+    {% include 'layouts/jumbotron.html.jinja' %}
     {% block content %}{% endblock %}
     <script src="{% static 'scripts/bootstrap.min.js' %}"></script>
     <script src="{% static 'scripts/app.js' %}"></script>

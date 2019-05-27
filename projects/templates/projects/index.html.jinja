@@ -1,14 +1,22 @@
 {% extends 'layouts/base.html.jinja' %}
+{% load static %}
 
 {% block title %}Alain Cao Van Truong | Projects{% endblock %}
 
 {% block content %}
-  <ul>
+<section class="container">
+  <div class="row">
     {% for project in projects %}
-      <li>
-        <h2>{{ project.title }}</h2>
-        <a href="{% url 'blog:project' slug=project.slug %}">{{ project.slug }}</a>
-      </li>
+      <div class="col-6 col-md-3">
+        <div class="card mt-5 mb-5">
+          <img src="{% static project.cover %}" class="card-img-top" alt="{{ project.title }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ project.title }}</h5>
+            <a href="{% url 'blog:project' slug=project.slug %}" class="btn btn-primary">Discover</a>
+          </div>
+        </div>
+      </div>
     {% endfor %}
-  </ul>
+  </div>
+</section>
 {% endblock %}

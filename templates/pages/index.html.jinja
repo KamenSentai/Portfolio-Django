@@ -3,5 +3,15 @@
 {% block title %}Alain Cao Van Truong | Portfolio{% endblock %}
 
 {% block content %}
-  <h1>Index</h1>
+<section class="container">
+  <h3>Who am I ?</h3>
+  <div class="row">
+    <p class="col-sm ">Hi ! My name is Alain CAO VAN TRUONG. I am a third-year studend at webschool HÉTIC. I mainly experiment front-end, back-end and a little bit mobile development. I am currently looking for a 5-month internship from late June to late November.</p>
+  </div>
+  <div class="row">
+    <div class="col-sm">
+      <a class="btn btn-primary" href="{% url 'blog:index' %}">Discover my portfolio here</a>
+    </div>
+  </div>
+</section>
 {% endblock %}
