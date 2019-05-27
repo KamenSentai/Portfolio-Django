@@ -1,8 +1,14 @@
-<ul>
-  {% for project in projects %}
-    <li>
-      <h2>{{ project.title }}</h2>
-      <a href="{% url 'blog:project' slug=project.slug %}">{{ project.slug }}</a>
-    </li>
-  {% endfor %}
-</ul>
+{% extends 'layouts/base.html.jinja' %}
+
+{% block title %}Alain Cao Van Truong | Projects{% endblock %}
+
+{% block content %}
+  <ul>
+    {% for project in projects %}
+      <li>
+        <h2>{{ project.title }}</h2>
+        <a href="{% url 'blog:project' slug=project.slug %}">{{ project.slug }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
