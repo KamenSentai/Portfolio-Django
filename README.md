@@ -7,7 +7,7 @@
 
 ## Install
 ```bash
-# Virtual environnement
+# Virtual environment
 $ virtualenv venv-django -p python3
 $ source venv-django/bin/activate 
 
