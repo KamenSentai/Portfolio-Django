@@ -1,9 +1,9 @@
 # Portfolio-Django
 
 ## Prerequisites
-- [https://www.python.org/](Python) >= 3.0.0
-- [https://pypi.org/project/pip/](PIP)
-- [https://virtualenv.pypa.io/en/latest/installation/](Virtualenv)
+- [Python](https://www.python.org/) >= 3.0.0
+- [PIP](https://pypi.org/project/pip/)
+- [Virtualenv](https://virtualenv.pypa.io/en/latest/installation/)
 
 ## Install
 ```bash
