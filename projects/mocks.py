@@ -9,6 +9,7 @@ class Projects():
       'cover': 'images/animation-science/0.png',
       'images': [
         'images/animation-science/0.png',
+        'images/animation-science/1.png',
       ]
     },
     {
@@ -18,6 +19,10 @@ class Projects():
       'cover': 'images/canvas-piano/0.png',
       'images': [
         'images/canvas-piano/0.png',
+        'images/canvas-piano/1.png',
+        'images/canvas-piano/2.png',
+        'images/canvas-piano/3.png',
+        'images/canvas-piano/4.png',
       ]
     },
     {
@@ -81,6 +86,7 @@ class Projects():
       'cover': 'images/loyalty/0.png',
       'images': [
         'images/loyalty/0.png',
+        'images/loyalty/1.png',
       ]
     },
     {
@@ -143,6 +149,10 @@ class Projects():
       'cover': 'images/todo-list/0.png',
       'images': [
         'images/todo-list/0.png',
+        'images/todo-list/1.png',
+        'images/todo-list/2.png',
+        'images/todo-list/3.png',
+        'images/todo-list/4.png',
       ]
     },
   ]
