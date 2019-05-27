@@ -9,7 +9,7 @@
     {% for project in projects %}
       <div class="col-6 col-md-3">
         <div class="card mt-5 mb-5">
-          <img src="{% static project.cover %}" class="card-img-top" alt="{{ project.title }}">
+          <img src="/{{ project.image }}" class="card-img-top" alt="{{ project.title }}">
           <div class="card-body">
             <h5 class="card-title">{{ project.title }}</h5>
             <a href="{% url 'blog:project' slug=project.slug %}" class="btn btn-primary">Discover</a>
