@@ -22,9 +22,9 @@ from . import views
 handler404 = 'portfolio.views.error404'
 
 urlpatterns = [
-  path('', views.index, name='index'),
-  path('about/', views.about, name='about'),
-  path('contact/', views.contact, name='contact'),
-  path('projects/', include('projects.urls')),
-  path('admin/', admin.site.urls),
+    path('', views.index, name='index'),
+    path('about/', views.about, name='about'),
+    path('contact/', views.contact, name='contact'),
+    path('projects/', include('projects.urls')),
+    path('admin/', admin.site.urls),
 ]
