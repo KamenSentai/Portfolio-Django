@@ -1,5 +1,8 @@
 <ul>
   {% for project in projects %}
-    <li>{{ project }}</li>
+    <li>
+      <h2>{{ project.title }}</h2>
+      <a href="{% url 'blog:project' slug=project.slug %}">{{ project.slug }}</a>
+    </li>
   {% endfor %}
 </ul>

@@ -10,5 +10,5 @@ def about(request):
 def contact(request):
   return render(request, 'pages/contact.html')
 
-def error404(request, exception):
+def error404(request, exception=None):
   return render(request, 'errors/404.html', {'error': exception}, status=404)
