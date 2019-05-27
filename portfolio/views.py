@@ -11,6 +11,24 @@ def about(request):
   return render(request, 'pages/about.html.jinja', {
     'h1': 'About myself',
     'h2': 'Learn about what I like doing',
+    'skills': [
+      'Vue.js',
+      'Nuxt.js',
+      'PHP Slim',
+      'Swift',
+      'Three.js',
+      'Sass',
+      'Stylus',
+      'Pug',
+      'Typescript',
+      'Node.js',
+      'AngularJS',
+      'React.js',
+      'Laravel',
+      'WordPress',
+      'Django',
+      'Ruby on Rails',
+    ]
   })
 
 def contact(request):

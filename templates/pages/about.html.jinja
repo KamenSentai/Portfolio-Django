@@ -4,5 +4,24 @@
 
 {% block content %}
 <section class="container">
+  <h3>Some of my skills</h3>
+  <div class="row">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Skill</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for skill in skills %}
+          <tr>
+            <th scope="row">{{ forloop.counter }}</th>
+            <td>{{ skill }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
 </section>
 {% endblock %}
