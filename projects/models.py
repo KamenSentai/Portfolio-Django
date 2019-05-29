@@ -1,6 +1,9 @@
 from django.db import models
 
-class ProjectModel(models.Model):
+class Project(models.Model):
+    '''
+    class Projects: project model
+    '''
     title = models.CharField(max_length=60)
     subtitle = models.CharField(max_length=255)
     slug = models.SlugField(unique=True)
